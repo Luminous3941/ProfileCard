@@ -98,6 +98,7 @@ ul[data-testid="test-user-dislikes"] {
   .profile-card {
     flex-direction: row;
     max-width: 80%;
+    margin: 15px auto;
   }
 
   .profile-avatar img {

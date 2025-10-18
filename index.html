@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Wizards - Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="profile-avatar">
+        <img
+          src="/luminous.jpeg"
+          alt="User avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <section class="profile-info">
+        <h2 data-testid="test-user-name">Abubakr Lawal</h2>
+        <p data-testid="test-user-bio">
+          A passionate frontend developer who loves crafting modern, responsive user interfaces and teaching others tech skills.
+        </p>
+        <p>
+          <strong>Current Time (ms): </strong>
+          <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+
+        <nav data-testid="test-user-social-links" class="social-links">
+          <ul>
+            <li><a data-testid="test-user-social-twitter" href="https://x.com/Abubakrlawal" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/abubakr-lawal-7a667b139/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a data-testid="test-user-social-github" href="https://github.com/Luminous3941" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="profile-hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Design</li>
+          <li>Photography</li>
+        </ul>
+      </section>
+
+      <section class="profile-dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Slow internet</li>
+          <li>Messy code</li>
+          <li>Unclear documentation</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

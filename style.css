@@ -21,7 +21,7 @@ body {
   color: #fff;
   /* max-width: 400px; */
   width: 90%;
-  margin: auto;
+  margin: 15px auto;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   overflow: auto;

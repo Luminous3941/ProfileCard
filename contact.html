@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Frontend Wizards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+  <main>
+    <form id="contactForm" novalidate>
+      <h2>Contact Us</h2>
+
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" data-testid="test-contact-name" aria-describedby="error-name" required />
+      <small id="error-name" data-testid="test-contact-error-name"></small>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" data-testid="test-contact-email" aria-describedby="error-email" required />
+      <small id="error-email" data-testid="test-contact-error-email"></small>
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" data-testid="test-contact-subject" aria-describedby="error-subject" required />
+      <small id="error-subject" data-testid="test-contact-error-subject"></small>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" data-testid="test-contact-message" aria-describedby="error-message" required></textarea>
+      <small id="error-message" data-testid="test-contact-error-message"></small>
+
+      <button type="submit" data-testid="test-contact-submit">Send Message</button>
+      <p id="success" data-testid="test-contact-success" class="hidden"></p>
+    </form>
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>
